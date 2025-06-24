@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
 
         movement.y = 0; // just in case
 
+        movement = transform.TransformDirection(movement);
         movement *= walkSpeed;
 
 
