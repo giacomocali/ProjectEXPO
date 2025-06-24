@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
+        print("Running on: " + SystemInfo.deviceType);
         charController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -27,7 +28,6 @@ public class PlayerController : MonoBehaviour
     private void InputManagement()
     {
         // change inputs based on device
-        print("Running on: "+SystemInfo.deviceType);
 
         mouseLook.x = Input.GetAxisRaw("Mouse X") * lookSensitivity * Time.deltaTime;
         mouseLook.y = Input.GetAxisRaw("Mouse Y") * lookSensitivity * Time.deltaTime;  
