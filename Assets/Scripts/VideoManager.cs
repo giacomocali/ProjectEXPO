@@ -1,11 +1,13 @@
 using UnityEngine;
+using UnityEngine.Video;
 
 public class VideoManager : MonoBehaviour, I_Interactable
 {
-    public Material red;
+    public VideoPlayer player;
 
     void I_Interactable.Interact()
     {
-        this.GetComponent<Renderer>().material = red;
+        player.Play();
+        Debug.Log("starting video");
     }
 }
