@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour
     float moveInput;
     float turnInput;
 
+    readonly float gravity = -9.81f;
+
     private void Start()
     {
         print("Running on: " + SystemInfo.deviceType);
@@ -30,7 +32,6 @@ public class PlayerController : MonoBehaviour
         // change inputs based on device
 
         mouseLook.x = Input.GetAxisRaw("Mouse X") * lookSensitivity * Time.deltaTime;
-        mouseLook.y = Input.GetAxisRaw("Mouse Y") * lookSensitivity * Time.deltaTime;  
 
         moveInput = Input.GetAxisRaw("Horizontal");
         turnInput = Input.GetAxisRaw("Vertical");
@@ -39,13 +40,10 @@ public class PlayerController : MonoBehaviour
 
     void Movement()
     {
-        Vector3 movement = new Vector3(moveInput, 0, turnInput);
-
-        movement.y = 0; // just in case
+        Vector3 movement = new Vector3(moveInput, gravity, turnInput);
 
         movement = transform.TransformDirection(movement);
         movement *= walkSpeed;
-
 
         charController.Move(movement * Time.deltaTime);
 

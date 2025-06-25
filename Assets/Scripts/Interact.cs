@@ -17,6 +17,7 @@ public class Interact : MonoBehaviour
         {
             if (hit.collider.TryGetComponent(out I_Interactable interactable))
             {
+                UIManager.ShowTooltip();
                 if (Input.GetKeyDown(KeyCode.E))
                 {
                     interactable.Interact();
