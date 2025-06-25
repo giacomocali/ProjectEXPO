@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-public class VideoManager : MonoBehaviour, I_Interactable
+public class InteractableVideo : MonoBehaviour, I_Interactable
 {
     public VideoPlayer player;
     bool playPauseButton;
@@ -14,7 +14,7 @@ public class VideoManager : MonoBehaviour, I_Interactable
             {
                 player.Play();
             }
-            else if (player.isPlaying) 
+            else if (player.isPlaying)
             {
                 player.Stop();
             }
@@ -25,11 +25,11 @@ public class VideoManager : MonoBehaviour, I_Interactable
             player.Play();
         }
 
-            Debug.Log("starting video");
+        Debug.Log("starting video");
     }
 
     void I_Interactable.Selected()
     {
-
+        
     }
 }
