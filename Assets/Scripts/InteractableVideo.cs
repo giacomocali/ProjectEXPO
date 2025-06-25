@@ -3,8 +3,13 @@ using UnityEngine.Video;
 
 public class InteractableVideo : MonoBehaviour, I_Interactable
 {
-    public VideoPlayer player;
+    VideoPlayer player;
     bool playPauseButton;
+
+    private void Awake()
+    {
+        player = GetComponent<VideoPlayer>();
+    }
 
     void I_Interactable.Interact()
     {
