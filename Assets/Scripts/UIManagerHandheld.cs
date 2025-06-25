@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class UIManagerHandheld : MonoBehaviour
 {
-    public GameObject pressETooltip;
+    public GameObject videoControls;
     public static UIManagerHandheld instance;
 
     private void Awake()
@@ -11,11 +11,11 @@ public class UIManagerHandheld : MonoBehaviour
     }
 
 
-    public static void ShowTooltip(bool show, string sAction)
+    public static void ShowPlayerControls(bool show)
     {
         if (instance != null)
         {
-
+            instance.videoControls.SetActive(show);
         }
     }
 }
