@@ -40,6 +40,7 @@ public class UIManagerHandheld : MonoBehaviour
 
     public void RewindVideo()
     {
+        playPauseImage.sprite = pauseIcon;
         Interact.selectedVideo.frame = 0;
         Interact.selectedVideo.Play();
     }
