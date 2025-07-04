@@ -8,7 +8,7 @@ public class Interact : MonoBehaviour
     Ray ray;
     RaycastHit hit;
 
-    public static VideoPlayer selectedVideo;
+    public static VideoPlayer selectedPlayer;
 
     private void Update()
     {
@@ -20,9 +20,9 @@ public class Interact : MonoBehaviour
         {
             if (hit.collider.TryGetComponent(out VideoPlayer player))
             {
+                //print("raycast hit a videoplayer");
                 UIManagerHandheld.ShowPlayerControls(true);
-                print("raycast hit a videoplayer");
-                selectedVideo = player;
+                selectedPlayer = player;
             }
             else
             {

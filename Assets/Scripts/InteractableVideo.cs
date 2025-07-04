@@ -9,6 +9,14 @@ public class InteractableVideo : MonoBehaviour, I_Interactable
     private void Awake()
     {
         player = GetComponent<VideoPlayer>();
+        try
+        {
+            player.url = System.IO.Path.Combine(Application.streamingAssetsPath, "testvideo.mp4");
+        }
+        catch(System.Exception e)
+        {
+            Debug.LogException(e);
+        }
     }
 
     void I_Interactable.Interact()

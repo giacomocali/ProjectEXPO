@@ -26,22 +26,30 @@ public class UIManagerHandheld : MonoBehaviour
 
     public void PlayOrPauseVideo()
     {
-        if (Interact.selectedVideo.isPlaying)
+        if (Interact.selectedPlayer.isPlaying)
         {
             playPauseImage.sprite = playIcon;
-            Interact.selectedVideo.Pause();
+            Interact.selectedPlayer.Pause();
         }
         else
         {
             playPauseImage.sprite = pauseIcon;
-            Interact.selectedVideo.Play();
+            try
+            {
+                Interact.selectedPlayer.Play();
+            }
+            catch(System.Exception e) 
+            { 
+                Debug.LogException(e);
+            }
+
         }
     }
 
     public void RewindVideo()
     {
         playPauseImage.sprite = pauseIcon;
-        Interact.selectedVideo.frame = 0;
-        Interact.selectedVideo.Play();
+        Interact.selectedPlayer.frame = 0;
+        Interact.selectedPlayer.Play();
     }
 }
