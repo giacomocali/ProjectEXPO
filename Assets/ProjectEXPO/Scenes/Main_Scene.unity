@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_AmbientSkyColor: {r: 0.9433962, g: 0.9433962, b: 0.9433962, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 9901d69b9e023154586e45cfe3dc4522, type: 2}
   m_HaloStrength: 0.5
@@ -1750,6 +1750,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1499577882}
     m_Modifications:
+    - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01 (2)
@@ -1958,7 +1962,7 @@ PrefabInstance:
     - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f4d0ea71b224bb842b7d11e74426a762, type: 2}
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01 (4)
@@ -22601,6 +22605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -22688,6 +22693,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 45, y: -140, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!4 &705836151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8153790505489289415, guid: 338265ac1047e05439e193c39d894b3b, type: 3}
@@ -29388,6 +29416,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1499577882}
     m_Modifications:
+    - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01 (1)
@@ -31658,6 +31690,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1499577882}
     m_Modifications:
+    - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01 (6)
@@ -35176,6 +35212,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1651389524117064258, guid: e2cca4a748358264b912cbcf8b135893, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651389524117064258, guid: e2cca4a748358264b912cbcf8b135893, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651389524117064258, guid: e2cca4a748358264b912cbcf8b135893, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1651389524117064258, guid: e2cca4a748358264b912cbcf8b135893, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3513872728190035636, guid: e2cca4a748358264b912cbcf8b135893, type: 3}
       propertyPath: lookJoystick
       value: 
@@ -42977,7 +43029,7 @@ PrefabInstance:
     - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f4d0ea71b224bb842b7d11e74426a762, type: 2}
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01 (5)
@@ -46824,7 +46876,7 @@ PrefabInstance:
     - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f4d0ea71b224bb842b7d11e74426a762, type: 2}
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01
@@ -56743,7 +56795,7 @@ PrefabInstance:
     - target: {fileID: 5600171466386215327, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: f4d0ea71b224bb842b7d11e74426a762, type: 2}
+      objectReference: {fileID: 2100000, guid: 1a240e8104746124ba093b15728c7ccc, type: 2}
     - target: {fileID: 6164047228117230915, guid: d2d2e6539b79f224cbda9fb47993a9d4, type: 3}
       propertyPath: m_Name
       value: Pouf01 (3)
