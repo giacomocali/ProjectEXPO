@@ -29037,7 +29037,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb79ddc9fe8eb5048ac2d84e42ee7624, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1759832897}
   m_SourcePrefab: {fileID: 100100000, guid: eb79ddc9fe8eb5048ac2d84e42ee7624, type: 3}
 --- !u!4 &891612426 stripped
 Transform:
@@ -44635,6 +44638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1317939793}
   - component: {fileID: 1317939795}
+  - component: {fileID: 1317939796}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -44722,6 +44726,29 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1317939796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1317939792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!4 &1320921910 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3650883035139581338, guid: b84a2fbf0a010d54a82b4b29173becd2, type: 3}
@@ -57324,6 +57351,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1112793055235317369, guid: b7ce7b60e6f3d4546a6780f0302f4027, type: 3}
   m_PrefabInstance: {fileID: 295396151}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1759832895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb79ddc9fe8eb5048ac2d84e42ee7624, type: 3}
+  m_PrefabInstance: {fileID: 890537471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1759832897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759832895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82da320b24a51184f806a9f6a074ea59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1760528825
 GameObject:
   m_ObjectHideFlags: 0
