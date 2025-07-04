@@ -2,25 +2,30 @@ using UnityEngine;
 
 public class CameraVerticalLook : MonoBehaviour
 {
+    [Header("References")]
+    public bool touchControls;
+    public Joystick lookJoystick;
+
+    [Header("Parameters")]
     public float verticalSens;
     public bool invertVertical;
 
-    float mouseY;
+    float vInput;
 
     void CameraVerticalRotation()
     {
-        if (!invertVertical)
+        if (touchControls)
         {
-            mouseY -= Input.GetAxisRaw("Mouse Y") * verticalSens * Time.deltaTime;
+            vInput -= lookJoystick.Vertical * verticalSens * Time.deltaTime;
         }
         else
         {
-            mouseY -= -Input.GetAxisRaw("Mouse Y") * verticalSens * Time.deltaTime;
+            vInput -= Input.GetAxisRaw("Mouse Y") * verticalSens * Time.deltaTime;
         }
 
-        mouseY = Mathf.Clamp(mouseY, -70, 70);
+        //inputY = Mathf.Clamp(inputY, -70, 70);
 
-        transform.localRotation = Quaternion.Euler(mouseY, 0, 0);
+        transform.localRotation = Quaternion.Euler(vInput, 0, 0);
     }
 
     void Update()

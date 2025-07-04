@@ -2,22 +2,27 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("References")]
-    private CharacterController charController;
+    [Header("Touch settings")]
+    public Joystick walkJoystick;
+    public Joystick lookJoystick;
+    public bool touchControls;
 
-    [Header("Movement settings")]
+    [Header("Parameters")]
     public float walkSpeed;
-    public float lookSensitivity;
+    public float horizontalLookSensitivity;
 
-    Vector2 mouseLook;
-    float moveInput;
-    float turnInput;
+    private CharacterController charController;
+    Vector2 look;
+
+    float hInput;
+    float vInput;
+
+    readonly float gravity = -9.81f;
 
     private void Start()
     {
         print("Running on: " + SystemInfo.deviceType);
         charController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void Update()
@@ -28,28 +33,32 @@ public class PlayerController : MonoBehaviour
     private void InputManagement()
     {
         // change inputs based on device
+        if (!touchControls)
+        { 
+            look.x = Input.GetAxisRaw("Mouse X") * horizontalLookSensitivity * Time.deltaTime;
 
-        mouseLook.x = Input.GetAxisRaw("Mouse X") * lookSensitivity * Time.deltaTime;
-        mouseLook.y = Input.GetAxisRaw("Mouse Y") * lookSensitivity * Time.deltaTime;  
+            hInput = Input.GetAxisRaw("Horizontal") * Time.deltaTime;
+            vInput = Input.GetAxisRaw("Vertical") * Time.deltaTime;
+        }
+        else
+        {
+            look.x = lookJoystick.Horizontal * horizontalLookSensitivity * Time.deltaTime;
 
-        moveInput = Input.GetAxisRaw("Horizontal");
-        turnInput = Input.GetAxisRaw("Vertical");
-    
+            hInput = walkJoystick.Horizontal * Time.deltaTime;
+            vInput = walkJoystick.Vertical * Time.deltaTime;
+        }
     }
 
     void Movement()
     {
-        Vector3 movement = new Vector3(moveInput, 0, turnInput);
-
-        movement.y = 0; // just in case
+        Vector3 movement = new Vector3(hInput, gravity, vInput);
 
         movement = transform.TransformDirection(movement);
         movement *= walkSpeed;
 
+        charController.Move(movement);
 
-        charController.Move(movement * Time.deltaTime);
-
-        transform.Rotate(0, mouseLook.x, 0);
+        transform.Rotate(0, look.x, 0);
     }
 
 
