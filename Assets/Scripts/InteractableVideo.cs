@@ -4,36 +4,34 @@ using UnityEngine.Video;
 public class InteractableVideo : MonoBehaviour
 {
     public string videoSource;
-    public GameObject screenOffEffect;
+    public Material screenOn;
 
     [HideInInspector] public VideoPlayer player;
+    MeshRenderer mr;
 
     private void Awake()
     {
         player = GetComponent<VideoPlayer>();
+        mr = GetComponent<MeshRenderer>();
 
         player.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoSource);
     }
     
     public void PlayPause()
     {
-        print("playorpause");
-        screenOffEffect.SetActive(false);
+        mr.material = screenOn;
         if (!player.isPlaying)
         {
-            print("play");
             player.Play();
         }
         else
         {
-            print("pause");
-            player.Stop();
+            player.Pause();
         }
     }
     public void Rewind()
     {
-        print("rewind");
-        screenOffEffect.SetActive(false);
+        mr.material = screenOn;
         player.frame = 0;
         player.Play();
     }
