@@ -1,13 +1,32 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
     public int startMenuIndex, mainSceneIndex, testSceneIndex;
 
+    [Header("Loading")]
+    public GameObject loadingScreen;
+    public Slider loadingBar;
+
     public void LoadMainScene()
     {
-        SceneManager.LoadScene(mainSceneIndex);
+        loadingScreen.SetActive(true);
+        StartCoroutine(LoadMainAsync());
+    }
+
+    IEnumerator LoadMainAsync()
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(mainSceneIndex);
+
+        while (!operation.isDone)
+        {
+            loadingBar.value = operation.progress;
+
+            yield return null;
+        }
     }
 
     public void LoadTestScene()
