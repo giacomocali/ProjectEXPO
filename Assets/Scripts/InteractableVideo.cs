@@ -1,48 +1,40 @@
 using UnityEngine;
 using UnityEngine.Video;
 
-public class InteractableVideo : MonoBehaviour, I_Interactable
+public class InteractableVideo : MonoBehaviour
 {
-    VideoPlayer player;
-    bool playPauseButton;
+    public string videoSource;
+    public GameObject screenOffEffect;
+
+    [HideInInspector] public VideoPlayer player;
 
     private void Awake()
     {
         player = GetComponent<VideoPlayer>();
-        try
-        {
-            player.url = System.IO.Path.Combine(Application.streamingAssetsPath, "testvideo.mp4");
-        }
-        catch(System.Exception e)
-        {
-            Debug.LogException(e);
-        }
-    }
 
-    void I_Interactable.Interact()
+        player.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoSource);
+    }
+    
+    public void PlayPause()
     {
-        if (playPauseButton)
+        print("playorpause");
+        screenOffEffect.SetActive(false);
+        if (!player.isPlaying)
         {
-            if (player.isPaused)
-            {
-                player.Play();
-            }
-            else if (player.isPlaying)
-            {
-                player.Stop();
-            }
+            print("play");
+            player.Play();
         }
         else
         {
-            player.frame = 0;
-            player.Play();
+            print("pause");
+            player.Stop();
         }
-
-        Debug.Log("starting video");
     }
-
-    void I_Interactable.Selected()
+    public void Rewind()
     {
-        
+        print("rewind");
+        screenOffEffect.SetActive(false);
+        player.frame = 0;
+        player.Play();
     }
 }

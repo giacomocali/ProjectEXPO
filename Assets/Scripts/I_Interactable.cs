@@ -1,11 +1,11 @@
 public interface I_Interactable
 {
-    void Selected()
+    public void Selected()
     {
 
     }
 
-    void Interact()
+    public void Interact(bool playPause)
     {
 
     }

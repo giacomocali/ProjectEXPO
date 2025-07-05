@@ -24,32 +24,28 @@ public class UIManagerHandheld : MonoBehaviour
         }
     }
 
-    public void PlayOrPauseVideo()
+    private void Update()
     {
-        if (Interact.selectedPlayer.isPlaying)
+        if (Interact.selectedPlayer != null)
         {
-            playPauseImage.sprite = playIcon;
-            Interact.selectedPlayer.Pause();
-        }
-        else
-        {
-            playPauseImage.sprite = pauseIcon;
-            try
+            if (Interact.selectedPlayer.player.isPlaying)
             {
-                Interact.selectedPlayer.Play();
+                playPauseImage.sprite = pauseIcon;
             }
-            catch(System.Exception e) 
-            { 
-                Debug.LogException(e);
+            else
+            {
+                playPauseImage.sprite = playIcon;
             }
-
         }
+    }
+
+    public void PlayOrPauseVideo()
+    {        
+        Interact.selectedPlayer.PlayPause();
     }
 
     public void RewindVideo()
     {
-        playPauseImage.sprite = pauseIcon;
-        Interact.selectedPlayer.frame = 0;
-        Interact.selectedPlayer.Play();
+        Interact.selectedPlayer.Rewind();
     }
 }
