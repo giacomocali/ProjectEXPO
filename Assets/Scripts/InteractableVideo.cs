@@ -17,6 +17,7 @@ public class InteractableVideo : MonoBehaviour
         player.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoSource);
     }
     
+
     public void PlayPause()
     {
         mr.material = screenOn;
