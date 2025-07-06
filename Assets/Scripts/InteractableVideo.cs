@@ -3,9 +3,10 @@ using UnityEngine.Video;
 
 public class InteractableVideo : MonoBehaviour
 {
+    public string videoSource;
     public GameObject unselectedFX;
     public GameObject selectedFX;
-    public string videoSource;
+    public GameObject led;
     public Material screenOn;
 
 
@@ -25,6 +26,7 @@ public class InteractableVideo : MonoBehaviour
     public void PlayPause()
     {
         tvOn = true;
+        led.SetActive(false);
         mr.material = screenOn;
         if (!player.isPlaying)
         {
@@ -38,6 +40,7 @@ public class InteractableVideo : MonoBehaviour
     public void Rewind()
     {
         tvOn = true;
+        led.SetActive(false);
         mr.material = screenOn;
         player.frame = 0;
         player.Play();
