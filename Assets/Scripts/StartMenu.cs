@@ -19,6 +19,7 @@ public class StartMenu : MonoBehaviour
 
     IEnumerator LoadMainAsync()
     {
+        Shader.WarmupAllShaders();
         AsyncOperation operation = SceneManager.LoadSceneAsync(mainSceneIndex);
 
         while (!operation.isDone)

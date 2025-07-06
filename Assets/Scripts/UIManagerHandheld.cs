@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -5,6 +6,8 @@ public class UIManagerHandheld : MonoBehaviour
 {
     public GameObject videoControls;
     public static UIManagerHandheld instance;
+
+    public TextMeshProUGUI heapText;
 
     public Image playPauseImage;
     public Sprite pauseIcon;
@@ -22,6 +25,11 @@ public class UIManagerHandheld : MonoBehaviour
         {
             instance.videoControls.SetActive(show);
         }
+    }
+
+    public void GetHeapSize()
+    {
+        heapText.text = "Heap size: "+UnityEngine.Profiling.Profiler.GetMonoHeapSizeLong().ToString();
     }
 
     private void Update()
