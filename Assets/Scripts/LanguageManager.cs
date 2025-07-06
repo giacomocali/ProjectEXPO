@@ -19,9 +19,6 @@ public class LanguageManager : MonoBehaviour
     [Header("Lista dei prefab testuali da localizzare")]
     public List<LocalizedPrefab> localizedPrefabs = new List<LocalizedPrefab>();
 
-    [Header("Toggle lingua")]
-    public Button toggleLanguageButton;
-
     private bool isItalian = true;
 
     void Awake()
@@ -34,9 +31,6 @@ public class LanguageManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
-        if (toggleLanguageButton != null)
-            toggleLanguageButton.onClick.AddListener(ToggleLanguage);
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -51,9 +45,15 @@ public class LanguageManager : MonoBehaviour
         UpdateAllTexts();
     }
 
-    public void ToggleLanguage()
+    public void SetToItalian()
     {
-        isItalian = !isItalian;
+        isItalian = true;
+        UpdateAllTexts();
+    }
+
+    public void SetToEnglish()
+    {
+        isItalian = false;
         UpdateAllTexts();
     }
 
@@ -69,9 +69,9 @@ public class LanguageManager : MonoBehaviour
 
             foreach (var sceneText in textsInScene)
             {
-                if (sceneText.name.StartsWith(prefabName))
+                if (sceneText.name == (prefabName))
                 {
-                    sceneText.text = isItalian ? entry.italianText : entry.englishText;
+                    sceneText.text = isItalian ? entry.italianText : entry.englishText; 
                 }
             }
         }
