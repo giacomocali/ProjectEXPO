@@ -23,14 +23,23 @@ public class Interact : MonoBehaviour
                 //print("raycast hit a videoplayer");
                 UIManagerHandheld.ShowPlayerControls(true);
                 selectedPlayer = player;
+                selectedPlayer.SelectedEffects();
             }
             else
             {
+                if(selectedPlayer != null)
+                {
+                    selectedPlayer.UnselectedEffects();
+                }
                 UIManagerHandheld.ShowPlayerControls(false);
             }
         }
         else
         {
+            if (selectedPlayer != null)
+            {
+                selectedPlayer.UnselectedEffects();
+            }
             UIManagerHandheld.ShowPlayerControls(false);
         }
 

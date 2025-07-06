@@ -3,8 +3,13 @@ using UnityEngine.Video;
 
 public class InteractableVideo : MonoBehaviour
 {
+    public GameObject unselectedFX;
+    public GameObject selectedFX;
     public string videoSource;
     public Material screenOn;
+
+
+    bool tvOn = false;
 
     [HideInInspector] public VideoPlayer player;
     MeshRenderer mr;
@@ -16,10 +21,10 @@ public class InteractableVideo : MonoBehaviour
 
         player.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoSource);
     }
-    
 
     public void PlayPause()
     {
+        tvOn = true;
         mr.material = screenOn;
         if (!player.isPlaying)
         {
@@ -32,8 +37,33 @@ public class InteractableVideo : MonoBehaviour
     }
     public void Rewind()
     {
+        tvOn = true;
         mr.material = screenOn;
         player.frame = 0;
         player.Play();
+    }
+
+    public void SelectedEffects()
+    {
+        if (tvOn)
+        {
+            unselectedFX.SetActive(false);
+            selectedFX.SetActive(false);
+            return;
+        }
+        unselectedFX.SetActive(false);
+        selectedFX.SetActive(true);
+    }
+
+    public void UnselectedEffects()
+    {
+        if (tvOn)
+        {
+            unselectedFX.SetActive(false);
+            selectedFX.SetActive(false);
+            return;
+        }
+        unselectedFX.SetActive(true);
+        selectedFX.SetActive(false);
     }
 }
