@@ -4,8 +4,10 @@ public class MainManager : MonoBehaviour
 {   
     private void Start()
     {
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 30;
         QualitySettings.vSyncCount = 0;
         Cursor.lockState = CursorLockMode.None;
     }
+
+    
 }

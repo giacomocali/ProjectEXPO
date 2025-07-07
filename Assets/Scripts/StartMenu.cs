@@ -19,7 +19,8 @@ public class StartMenu : MonoBehaviour
 
     IEnumerator LoadMainAsync()
     {
-        Shader.WarmupAllShaders();
+        Physics.autoSimulation = false;
+
         AsyncOperation operation = SceneManager.LoadSceneAsync(mainSceneIndex);
         operation.allowSceneActivation = false;
 
@@ -31,7 +32,7 @@ public class StartMenu : MonoBehaviour
         }
         yield return new WaitForSecondsRealtime(0.5f);
         operation.allowSceneActivation = true;
-
+        Physics.autoSimulation = true;
     }
 
     public void LoadTestScene()
