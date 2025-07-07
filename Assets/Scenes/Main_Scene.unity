@@ -181,27 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 858caa6d8a70fac4b93ea24c8342fc07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  localizedPrefabs:
-  - prefab: {fileID: 1646494028678456019}
-    italianText: "Benvenuto a EXPO2025 Osaka\r"
-    englishText: 'Welcome to EXPO2025 Osaka
-
-'
-  - prefab: {fileID: 368771057}
-    italianText: 'Naviga tra i padiglioni ed interagisci con gli schermi per visionare
-      i video.
-
-'
-    englishText: 'Navigate through the pavilions and interact with the screens to
-      watch the videos.
-
-'
-  - prefab: {fileID: 0}
-    italianText: 
-    englishText: 
-  - prefab: {fileID: 0}
-    italianText: 
-    englishText: 
+  translatableTexts: []
 --- !u!1001 &2750073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11022,17 +11002,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6823717831052906509, guid: 20c0ff966d5e7b34d91ed17059eed090, type: 3}
   m_PrefabInstance: {fileID: 918988217}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &368771057 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6691794558781103880, guid: c05b4dd0d439ac94eb2b5a37f70b5e94, type: 3}
-  m_PrefabInstance: {fileID: 8699640047794559921}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &369329129
 GameObject:
   m_ObjectHideFlags: 0
@@ -62833,17 +62802,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6473147892692103520, guid: f49d00a1695e6e24fb5916155526214a, type: 3}
   m_PrefabInstance: {fileID: 1570433988877642042}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1646494028678456019 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1797370307064439993, guid: c05b4dd0d439ac94eb2b5a37f70b5e94, type: 3}
-  m_PrefabInstance: {fileID: 8699640047794559921}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &4165830748729398506
 PrefabInstance:
   m_ObjectHideFlags: 0

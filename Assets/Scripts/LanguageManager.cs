@@ -9,17 +9,15 @@ public class LanguageManager : MonoBehaviour
     public static LanguageManager Instance;
 
     [System.Serializable]
-    public class LocalizedPrefab
+    public class TextToTranslate
     {
-        public TextMeshProUGUI prefab; // il prefab collegato da Assets
+        public TextMeshProUGUI tmPro;
         [TextArea] public string italianText;
         [TextArea] public string englishText;
     }
 
-    [Header("Lista dei prefab testuali da localizzare")]
-    public List<LocalizedPrefab> localizedPrefabs = new List<LocalizedPrefab>();
-
-    private bool isItalian = true;
+    [Header("Testi in scena da tradurre")]
+    public List<TextToTranslate> translatableTexts = new List<TextToTranslate>();
 
     void Awake()
     {
@@ -30,7 +28,7 @@ public class LanguageManager : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
@@ -61,28 +59,17 @@ public class LanguageManager : MonoBehaviour
 
     void UpdateAllTexts()
     {
-        TextMeshProUGUI[] textsInScene = FindObjectsOfType<TextMeshProUGUI>(true);
-
-        foreach (var entry in localizedPrefabs)
+        foreach (var entry in translatableTexts)
         {
-            if (entry.prefab == null) continue;
-
-            string prefabName = entry.prefab.name;
-
-            foreach (var sceneText in textsInScene)
+            if(PlayerPrefs.GetString("lang") == "ita")
             {
-                if (sceneText.name == (prefabName))
-                {
-                    if(PlayerPrefs.GetString("lang") == "ita")
-                    {
-                        sceneText.text = entry.italianText;
-                    }
-                    else if(PlayerPrefs.GetString("lang") == "eng")
-                    {
-                        sceneText.text = entry.englishText;
-                    }
-                }
+                entry.tmPro.text = entry.italianText;
             }
+            else if(PlayerPrefs.GetString("lang") == "eng")
+            {
+                entry.tmPro.text = entry.englishText;
+            }    
+            
         }
     }
 }
