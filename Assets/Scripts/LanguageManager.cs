@@ -47,13 +47,15 @@ public class LanguageManager : MonoBehaviour
 
     public void SetToItalian()
     {
-        isItalian = true;
+        PlayerPrefs.SetString("lang", "ita");
+        PlayerPrefs.Save();
         UpdateAllTexts();
     }
 
     public void SetToEnglish()
     {
-        isItalian = false;
+        PlayerPrefs.SetString("lang", "eng");
+        PlayerPrefs.Save();
         UpdateAllTexts();
     }
 
@@ -71,7 +73,14 @@ public class LanguageManager : MonoBehaviour
             {
                 if (sceneText.name == (prefabName))
                 {
-                    sceneText.text = isItalian ? entry.italianText : entry.englishText; 
+                    if(PlayerPrefs.GetString("lang") == "ita")
+                    {
+                        sceneText.text = entry.italianText;
+                    }
+                    else if(PlayerPrefs.GetString("lang") == "eng")
+                    {
+                        sceneText.text = entry.englishText;
+                    }
                 }
             }
         }
