@@ -61,14 +61,17 @@ public class LanguageManager : MonoBehaviour
     {
         foreach (var entry in translatableTexts)
         {
-            if(PlayerPrefs.GetString("lang") == "ita")
+            if(entry != null)
             {
-                entry.tmPro.text = entry.italianText;
+                if(PlayerPrefs.GetString("lang") == "ita")
+                {
+                    entry.tmPro.text = entry.italianText;
+                }
+                else if(PlayerPrefs.GetString("lang") == "eng")
+                {
+                    entry.tmPro.text = entry.englishText;
+                }    
             }
-            else if(PlayerPrefs.GetString("lang") == "eng")
-            {
-                entry.tmPro.text = entry.englishText;
-            }    
             
         }
     }
