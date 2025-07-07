@@ -21,13 +21,17 @@ public class StartMenu : MonoBehaviour
     {
         Shader.WarmupAllShaders();
         AsyncOperation operation = SceneManager.LoadSceneAsync(mainSceneIndex);
+        operation.allowSceneActivation = false;
 
-        while (!operation.isDone)
+        while (operation.progress < 0.9f)
         {
             loadingBar.value = operation.progress;
 
             yield return null;
         }
+        yield return new WaitForSecondsRealtime(0.5f);
+        operation.allowSceneActivation = true;
+
     }
 
     public void LoadTestScene()
