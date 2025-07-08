@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManagerHandheld : MonoBehaviour
@@ -44,6 +46,7 @@ public class UIManagerHandheld : MonoBehaviour
         }
     }
 
+    // VIDEO
     public void PlayOrPauseVideo()
     {        
         Interact.selectedPlayer.PlayPause();
@@ -52,5 +55,22 @@ public class UIManagerHandheld : MonoBehaviour
     public void RewindVideo()
     {
         Interact.selectedPlayer.Rewind();
+    }
+
+
+    // PAUSE MENU
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1f;
+    }
+
+    public void LoadStartMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }
