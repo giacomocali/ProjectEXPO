@@ -7,8 +7,6 @@ public class UIManagerHandheld : MonoBehaviour
     public GameObject videoControls;
     public static UIManagerHandheld instance;
 
-    public TextMeshProUGUI heapText;
-
     public Image playPauseImage;
     public Sprite pauseIcon;
     public Sprite playIcon;
@@ -18,6 +16,10 @@ public class UIManagerHandheld : MonoBehaviour
         instance = this;
     }
 
+    public void SetTargetFPS(int tgt)
+    {
+        Application.targetFrameRate = tgt;
+    }
 
     public static void ShowPlayerControls(bool show)
     {
@@ -25,11 +27,6 @@ public class UIManagerHandheld : MonoBehaviour
         {
             instance.videoControls.SetActive(show);
         }
-    }
-
-    public void GetHeapSize()
-    {
-        heapText.text = "Heap size: "+UnityEngine.Profiling.Profiler.GetMonoHeapSizeLong().ToString();
     }
 
     private void Update()

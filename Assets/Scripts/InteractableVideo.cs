@@ -3,17 +3,36 @@ using UnityEngine.Video;
 
 public class InteractableVideo : MonoBehaviour
 {
+    [Header("Video name")]
     public string videoSource;
+
+    [Header("Automatic control")]
+    public Transform playerT;
+    public AudioSource ambience;
+    float maxDistance = 5;
+
+    [Header("Effects")]
     public GameObject unselectedFX;
     public GameObject selectedFX;
     public GameObject led;
     public Material screenOn;
 
-
     bool tvOn = false;
+    float currentDistance;
 
     [HideInInspector] public VideoPlayer player;
     MeshRenderer mr;
+
+    private void OnEnable()
+    {
+        player.Prepare();
+        TickSystem.OnTickAction += Tick;
+    }
+
+    private void OnDisable()
+    {
+        TickSystem.OnTickAction -= Tick;
+    }
 
     private void Awake()
     {
@@ -23,12 +42,34 @@ public class InteractableVideo : MonoBehaviour
         player.url = System.IO.Path.Combine(Application.streamingAssetsPath, videoSource);
     }
 
+
+
+
+
+    private void Tick()
+    {
+        if (player.isPlaying)
+        {
+            ambience.volume = 0f;
+            currentDistance = Vector3.Distance(transform.position, playerT.position);
+
+            if(currentDistance > maxDistance)
+            {
+                player.Stop();
+            }
+        }
+        else if(!player.isPlaying)
+        {
+            ambience.volume = 1f;
+        }
+    }
+
     public void PlayPause()
     {
         tvOn = true;
         led.SetActive(false);
         mr.material = screenOn;
-        if (!player.isPlaying)
+        if (!player.isPlaying && player.isPrepared)
         {
             player.Play();
         }
