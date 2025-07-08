@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 1190d9deb77395144b2e809ccba650b9, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1270,6 +1270,7 @@ MonoBehaviour:
   startMenuIndex: 0
   mainSceneIndex: 1
   testSceneIndex: 2
+  languageSelect: {fileID: 8452779922985074168}
   loadingScreen: {fileID: 4141045930640366960}
   loadingBar: {fileID: 7615374510782681505}
 --- !u!1 &296212003

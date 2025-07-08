@@ -7,9 +7,21 @@ public class StartMenu : MonoBehaviour
 {
     public int startMenuIndex, mainSceneIndex, testSceneIndex;
 
+    [Header("Language select box")]
+    public GameObject languageSelect;
+
     [Header("Loading")]
     public GameObject loadingScreen;
     public Slider loadingBar;
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey("lang"))
+        {
+            languageSelect.SetActive(false);
+        }
+        Time.timeScale = 1f;
+    }
 
     public void LoadMainScene()
     {
