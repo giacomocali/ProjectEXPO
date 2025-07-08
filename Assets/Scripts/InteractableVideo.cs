@@ -55,7 +55,7 @@ public class InteractableVideo : MonoBehaviour
 
             if(currentDistance > maxDistance)
             {
-                player.Stop();
+                player.Pause();
             }
         }
         else if(!player.isPlaying)
