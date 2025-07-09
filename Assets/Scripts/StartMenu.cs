@@ -14,7 +14,6 @@ public class StartMenu : MonoBehaviour
     int currentButton = 0;
 
     [Header("Language select box")]
-    public bool resetKey;
     public GameObject languageSelect;
 
     [Header("Loading")]
@@ -23,10 +22,6 @@ public class StartMenu : MonoBehaviour
 
     private void Start()
     {
-        if (resetKey)
-        {
-            PlayerPrefs.DeleteKey("lang");
-        }
         Time.timeScale = 1f;
         if (PlayerPrefs.HasKey("lang"))
         {
@@ -35,6 +30,11 @@ public class StartMenu : MonoBehaviour
         }
     }
     
+    public void DeactivateLanguageSelect()
+    {
+        languageSelect.SetActive(false);
+    }
+
     public void StaggerAnimation()
     {
         Invoke("ActivateNextButton", delay);
