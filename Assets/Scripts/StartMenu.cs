@@ -29,6 +29,11 @@ public class StartMenu : MonoBehaviour
         StartCoroutine(LoadMainAsync());
     }
 
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
+    }
+
     IEnumerator LoadMainAsync()
     {
         Physics.autoSimulation = false;
