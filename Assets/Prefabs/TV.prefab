@@ -188,6 +188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoSource: dodgethis.mp4
+  playerT: {fileID: 0}
+  ambience: {fileID: 0}
   unselectedFX: {fileID: 1042134328085474549}
   selectedFX: {fileID: 3302255967775807085}
   led: {fileID: 2471136683804744463}
@@ -5632,7 +5634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5593241129544112843}
   m_Layer: 0
-  m_Name: tv
+  m_Name: TV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
