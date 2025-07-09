@@ -5,7 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    [Header("Scene indexes")]
     public int startMenuIndex, mainSceneIndex, testSceneIndex;
+
+    [Header("Buttons stagger animation")]
+    public GameObject[] menuButtons;
+    public float delay;
+    int currentButton = 0;
 
     [Header("Language select box")]
     public GameObject languageSelect;
@@ -16,11 +22,27 @@ public class StartMenu : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1f;
         if (PlayerPrefs.HasKey("lang"))
         {
             languageSelect.SetActive(false);
         }
-        Time.timeScale = 1f;
+        StaggerAnimation();
+    }
+    
+    public void StaggerAnimation()
+    {
+        Invoke("ActivateNextButton", delay);
+    }
+
+    void ActivateNextButton()
+    {
+        if(currentButton < menuButtons.Length)
+        {
+            menuButtons[currentButton].SetActive(true); 
+            Invoke("ActivateNextButton", delay);
+            currentButton++;
+        }
     }
 
     public void LoadMainScene()
