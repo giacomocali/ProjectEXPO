@@ -32,7 +32,15 @@ public class StartMenu : MonoBehaviour
     
     public void DeactivateLanguageSelect()
     {
+        print("DeactivateLangSel");
+        StartCoroutine("WaitBeforeDeactivation");
+    }
+
+    IEnumerator WaitBeforeDeactivation()
+    {
+        yield return new WaitForSecondsRealtime(1f);
         languageSelect.SetActive(false);
+        print("deactivating language select");
     }
 
     public void StaggerAnimation()
