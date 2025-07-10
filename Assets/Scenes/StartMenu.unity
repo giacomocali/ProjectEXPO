@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Programming, UI, Performance Optimizations
+  m_text: Environment and Level Design, Asset Curator
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
   m_sharedMaterial: {fileID: 254621696784109787, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
@@ -1977,8 +1977,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2240,7 +2240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Giacomo Cal\xEC"
+  m_text: Simone Petronio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
   m_sharedMaterial: {fileID: 254621696784109787, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
@@ -2267,8 +2267,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3065,10 +3065,10 @@ RectTransform:
   - {fileID: 2057383477}
   m_Father: {fileID: 296212004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -345.59613}
-  m_SizeDelta: {x: 230, y: 230}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &773995257
 MonoBehaviour:
@@ -3287,7 +3287,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &861186206
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3435,10 +3435,10 @@ RectTransform:
   - {fileID: 1819810647}
   m_Father: {fileID: 296212004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115, y: -115.596146}
-  m_SizeDelta: {x: 230, y: 230}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &869670253
 MonoBehaviour:
@@ -4084,7 +4084,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Giacomo Cal\xEC"
+  m_text: Edoardo Cinus
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
   m_sharedMaterial: {fileID: 254621696784109787, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
@@ -4111,8 +4111,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4494,7 +4494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Programming, UI, Performance Optimizations
+  m_text: ------
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
   m_sharedMaterial: {fileID: 254621696784109787, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
@@ -6060,10 +6060,10 @@ RectTransform:
   - {fileID: 258574147}
   m_Father: {fileID: 296212004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 345, y: -115.596146}
-  m_SizeDelta: {x: 230, y: 230}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1419578948
 MonoBehaviour:
@@ -6639,7 +6639,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Giacomo Cal\xEC"
+  m_text: Stefano Di Marco
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
   m_sharedMaterial: {fileID: 254621696784109787, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
@@ -6666,8 +6666,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7601,10 +7601,10 @@ RectTransform:
   - {fileID: 1096914005}
   m_Father: {fileID: 296212004}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115, y: -345.59613}
-  m_SizeDelta: {x: 230, y: 230}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921458841
 MonoBehaviour:
@@ -8231,7 +8231,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Programming, UI, Performance Optimizations
+  m_text: Sound Design
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
   m_sharedMaterial: {fileID: 254621696784109787, guid: d5e3df3e175ed874cb6654d3a9ed69c2, type: 2}
@@ -9519,9 +9519,9 @@ RectTransform:
   - {fileID: 928785674}
   m_Father: {fileID: 7403658839990098733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 578.943, y: -197.8587}
   m_SizeDelta: {x: 310, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6222888536524108910
@@ -9736,9 +9736,9 @@ RectTransform:
   - {fileID: 1165420700}
   m_Father: {fileID: 7403658839990098733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 192.98099, y: -197.8587}
   m_SizeDelta: {x: 310, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7979378067697890211
@@ -9959,7 +9959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &8452779922985074169
 Animator:
   serializedVersion: 7
