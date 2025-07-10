@@ -14,7 +14,6 @@ public class InteractableVideo : MonoBehaviour
     [Header("Effects")]
     public GameObject unselectedFX;
     public GameObject selectedFX;
-    public GameObject led;
     public Material screenOn;
 
     [Header("Subtitles")]
@@ -79,7 +78,6 @@ public class InteractableVideo : MonoBehaviour
     public void PlayPause()
     {
         tvOn = true;
-        led.SetActive(false);
         mr.material = screenOn;
         if (!player.isPlaying && player.isPrepared)
         {
@@ -93,7 +91,6 @@ public class InteractableVideo : MonoBehaviour
     public void Rewind()
     {
         tvOn = true;
-        led.SetActive(false);
         mr.material = screenOn;
         player.frame = 0;
         player.Play();

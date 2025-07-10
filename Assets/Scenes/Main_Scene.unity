@@ -6572,6 +6572,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205688254}
     m_Modifications:
+    - target: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5593241129544112843, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.344
@@ -20395,6 +20399,10 @@ PrefabInstance:
     - target: {fileID: 1262731463598503806, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2486527401305763637, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49718,6 +49726,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.058
       objectReference: {fileID: 0}
+    - target: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5593241129544112843, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.433
@@ -64273,7 +64285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2822552100989373736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65098,6 +65110,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205688254}
     m_Modifications:
+    - target: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+      propertyPath: m_WaitForFirstFrame
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5593241129544112843, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.707594

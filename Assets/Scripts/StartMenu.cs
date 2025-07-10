@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     [Header("Scene indexes")]
-    public int startMenuIndex, mainSceneIndex, testSceneIndex;
+    public int startMenuIndex, mainSceneIndex;
 
     [Header("Buttons stagger animation")]
     public GameObject[] menuButtons;
@@ -58,38 +58,26 @@ public class StartMenu : MonoBehaviour
         }
     }
 
-    public void LoadMainScene()
-    {
-        loadingScreen.SetActive(true);
-        StartCoroutine(LoadMainAsync());
-    }
-
     public void OpenURL(string url)
     {
         Application.OpenURL(url);
     }
 
-    IEnumerator LoadMainAsync()
+    bool increaseLoadingBar = false;
+
+    public void LoadMainScene()
     {
-        Physics.autoSimulation = false;
-
-        AsyncOperation operation = SceneManager.LoadSceneAsync(mainSceneIndex);
-        operation.allowSceneActivation = false;
-
-        while (operation.progress < 0.9f)
-        {
-            loadingBar.value = operation.progress;
-
-            yield return null;
-        }
-        yield return new WaitForSecondsRealtime(0.5f);
-        operation.allowSceneActivation = true;
-        Physics.autoSimulation = true;
+        loadingScreen.SetActive(true);
+        increaseLoadingBar = true;
+        SceneManager.LoadScene(1);
     }
 
-    public void LoadTestScene()
+    private void FixedUpdate()
     {
-        SceneManager.LoadScene(testSceneIndex);
+        if (increaseLoadingBar)
+        {
+            loadingBar.value++;
+        }
     }
 
 }
