@@ -17,6 +17,9 @@ public class InteractableVideo : MonoBehaviour
     public GameObject led;
     public Material screenOn;
 
+    [Header("Subtitles")]
+    public GameObject subtitleController;
+
     bool tvOn = false;
     float currentDistance;
 
@@ -50,7 +53,13 @@ public class InteractableVideo : MonoBehaviour
     {
         if (player.isPlaying)
         {
+            //subtitles
+            subtitleController.SetActive(true);
+
+            //ambience volume
             ambience.volume = 0f;
+
+            //autostop
             currentDistance = Vector3.Distance(transform.position, playerT.position);
 
             if(currentDistance > maxDistance)
@@ -60,6 +69,9 @@ public class InteractableVideo : MonoBehaviour
         }
         else if(!player.isPlaying)
         {
+            //subtitles
+            subtitleController.SetActive(false);
+
             ambience.volume = 1f;
         }
     }
