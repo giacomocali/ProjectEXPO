@@ -30,6 +30,11 @@ public class StartMenu : MonoBehaviour
         }
     }
     
+    public void ChooseLanguageAgain()
+    {
+        PlayerPrefs.DeleteKey("lang");
+    }
+
     public void DeactivateLanguageSelect()
     {
         print("DeactivateLangSel");
@@ -50,17 +55,12 @@ public class StartMenu : MonoBehaviour
 
     void ActivateNextButton()
     {
-        if(currentButton < menuButtons.Length)
+        if (currentButton < menuButtons.Length)
         {
-            menuButtons[currentButton].SetActive(true); 
+            menuButtons[currentButton].SetActive(true);
             Invoke("ActivateNextButton", delay);
             currentButton++;
         }
-    }
-
-    public void OpenURL(string url)
-    {
-        Application.OpenURL(url);
     }
 
     bool increaseLoadingBar = false;
