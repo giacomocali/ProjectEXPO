@@ -6339,6 +6339,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: subtitles.Array.data[0].text
       value: "Tema: \u201CComposing the Future\u201D \u2013 un omaggio alla tradizione
         musicale austriaca come Mozart e alla loro visione di un futuro armonioso."
@@ -6362,8 +6366,116 @@ PrefabInstance:
         Austria e Giappone."
       objectReference: {fileID: 0}
     - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: subtitles.Array.data[3].duration
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].text
+      value: "Tema: \u201CComposing the Future\u201D \u2013 un omaggio alla tradizione
+        musicale austriaca come Mozart e alla loro visione di un futuro armonioso."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].text
+      value: 'Architettura: una struttura a spirale di legno che richiama un pentagramma
+        musicale, visibile da lontano.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].text
+      value: "Realizzata con assi avvitate (non incollate) per facilitare lo smontaggio
+        e il riuso, seguendo principi di sostenibilit\xE0."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[3].text
+      value: "Allestimento: tre aree espositive \u2014 Relazioni, Persone, Idee \u2014
+        culminano nella \u201CCattedrale del Futuro\u201D, uno spazio interattivo
+        dove i visitatori possono comporre musica con l\u2019AI"
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[4].text
+      value: "Allestimento: tre aree espositive \u2014 Relazioni, Persone, Idee \u2014
+        culminano nella \u201CCattedrale del Futuro\u201D, uno spazio interattivo
+        dove i visitatori possono comporre musica con l\u2019AI"
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[5].text
+      value: "Attivit\xE0 extra: eventi e concerti come il Vienna Boys Choir (23
+        maggio, Giorno nazionale dell\u2019Austria), e proposte gastronomiche fra
+        Austria e Giappone."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].text
+      value: "Theme: \u201CComposing the Future\u201D - a tribute to the Austrian
+        musical tradition such as Mozart and their vision of a harmonious future."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].text
+      value: 'Architecture: a spiral wooden structure reminiscent of a musical pentagram,
+        visible from afar.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].text
+      value: Made of screwed (not glued) planks for easy disassembly and reuse, following
+        principles of sustainability.
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[3].text
+      value: "Set-up: three exhibition areas - Relationships, People, Ideas - culminate
+        in the \u201CCathedral of the Future\u201D, an interactive space where visitors
+        can compose music with AI"
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[4].text
+      value: 'Extra activities: events and concerts such as the Vienna Boys Choir
+        (23 May, Austria''s National Day), and gastronomic offerings between Austria
+        and Japan.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[3].duration
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[4].duration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[5].duration
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[3].duration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[4].duration
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1085027186062712399, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: m_Name
@@ -6652,6 +6764,11 @@ PrefabInstance:
 --- !u!4 &225183193 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5593241129544112843, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+  m_PrefabInstance: {fileID: 225183192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &225183194 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
   m_PrefabInstance: {fileID: 225183192}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &229090253
@@ -20492,6 +20609,11 @@ PrefabInstance:
 --- !u!4 &702039581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5593241129544112843, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+  m_PrefabInstance: {fileID: 702039580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &702039582 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
   m_PrefabInstance: {fileID: 702039580}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &702088101
@@ -36957,6 +37079,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: subtitles.Array.data[0].text
       value: "Tema: \u201CGarden of Knowledge: A Laboratory for a Future Society\u201D
         \u2014 fondendo l\u2019eredit\xE0 storica (Giardini della via della seta)
@@ -36986,12 +37112,122 @@ PrefabInstance:
         di danza, oltre 100.000 visitatori gi\xE0 registrati."
       objectReference: {fileID: 0}
     - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: subtitles.Array.data[3].duration
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: subtitles.Array.data[4].duration
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].text
+      value: "Tema: \u201CGarden of Knowledge: A Laboratory for a Future Society\u201D
+        \u2014 fondendo l\u2019eredit\xE0 storica (Giardini della via della seta)
+        con la visione futura e sostenibile."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].text
+      value: "Architettura: progetto di Atelier Br\xFCckner; base in mattoni/clay,
+        livello superiore in colonnato di sugi\u2013legno di cedro locale, con forma
+        triangolare che evoca il tumar (amuleto)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].text
+      value: "Allestimento: tre zone tematiche \u2013 educazione, innovazione, energia
+        pulita \u2013 e una piattaforma centrale che si muove lentamente avvolta
+        da media a 360\xB0."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[3].text
+      value: "Materiali & sostenibilit\xE0: legno locale, mattoni riciclati, NFC
+        su colonne per tracciabilit\xE0; dopo l\u2019Expo, il padiglione verr\xE0
+        smontato e ricostruito in Uzbekistan \u2013 su modello di studio/scuola/cultura."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[4].text
+      value: "Eventi: ospiti come l\u2019Orchestra Sinfonica Nazionale uzbeka, performance
+        di danza, oltre 100.000 visitatori gi\xE0 registrati."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[5].text
+      value: "Eventi: ospiti come l\u2019Orchestra Sinfonica Nazionale uzbeka, performance
+        di danza, oltre 100.000 visitatori gi\xE0 registrati."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].text
+      value: "Theme: \u201CGarden of Knowledge: A Laboratory for a Future Society\u201D
+        - merging historical heritage (Silk Road Gardens) with a future, sustainable
+        vision."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].text
+      value: "Architecture: design by Atelier Br\xFCckner; brick/clay base, upper
+        level of local cedar sugi-wood colonnade, with triangular shape evoking the
+        tumar (amulet)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].text
+      value: "Layout: three thematic zones - education, innovation, clean energy
+        - and a central, slowly moving platform enveloped in 360\xB0 media."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[3].text
+      value: 'Materials & sustainability: local wood, recycled bricks, NFC on columns
+        for traceability; after the Expo, the pavilion will be dismantled and rebuilt
+        in Uzbekistan - based on a study/school/culture model.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[4].text
+      value: 'Events: guests such as the Uzbek National Symphony Orchestra, dance
+        performances, over 100,000 visitors already registered.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].duration
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].duration
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[3].duration
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[4].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[5].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].duration
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[3].duration
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[4].duration
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1085027186062712399, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: m_Name
@@ -37039,7 +37275,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573395390362396680, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -44837,6 +45073,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].text
+      value: "Tema: un \u201Claboratorio della bellezza\u201D che unisce artigianato,
+        sostenibilit\xE0 e innovazione."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].text
+      value: "Architettura: progettato da Mario Cucinella Architects, presenta un
+        tetto sinuoso di materiali riciclati e bio\u2010compositi, simbolo di tradizione
+        e innovazione."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].text
+      value: "Spazi: tre sezioni interiori \u2013 Teatro, Citt\xE0 ideale e Giardino
+        italiano \u2013 narrano una storia di bellezza, arte, e sostenibilit\xE0."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].text
+      value: "Theme: a \u201Claboratory of beauty\u201D combining craftsmanship,
+        sustainability and innovation"
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].text
+      value: 'Architecture: designed by Mario Cucinella Architects, it features a
+        sinuous roof of recycled and bio-composite materials, symbolising tradition
+        and innovation.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].text
+      value: 'Spaces: three interior sections - Theatre, Ideal City and Italian Garden
+        - tell a story of beauty, art, and sustainability.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].duration
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1085027186062712399, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: m_Name
       value: TextMonitor Variant Italia
@@ -49972,6 +50272,11 @@ PrefabInstance:
 --- !u!4 &1703432469 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5593241129544112843, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+  m_PrefabInstance: {fileID: 1703432468}
+  m_PrefabAsset: {fileID: 0}
+--- !u!328 &1703432470 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
   m_PrefabInstance: {fileID: 1703432468}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1706320198
@@ -65319,6 +65624,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: subtitles.Array.data[0].text
       value: "La Malesia \xE8 tra le prime nazioni ad aver iniziato i lavori di costruzione
         del padiglione (marzo 2024)."
@@ -65329,6 +65638,65 @@ PrefabInstance:
         n\xE9 tema, n\xE9 rendering definitivi, n\xE9 contenuti strutturali legati
         a materiali o architettura. Il progetto dovrebbe cadere nella zona \u201CEmpowering
         Lives\u201D o \u201CConnecting Lives\u201D ma resta coperto da NDA."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].text
+      value: "La Malesia \xE8 tra le prime nazioni ad aver iniziato i lavori di costruzione
+        del padiglione (marzo 2024)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].text
+      value: "Attualmente (giugno 2025), non sono stati ancora svelati ufficialmente
+        n\xE9 tema, n\xE9 rendering definitivi, n\xE9 contenuti strutturali legati
+        a materiali o architettura"
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].text
+      value: "Il progetto dovrebbe cadere nella zona \u201CEmpowering Lives\u201D
+        o \u201CConnecting Lives\u201D ma resta coperto da NDA."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].text
+      value: 'Malaysia is among the first nations to start construction work on the
+        pavilion (March 2024). '
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].text
+      value: At present (June 2025), neither theme, nor final renderings, nor structural
+        contents related to materials or architecture have yet been officially unveiled.
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].text
+      value: "The project is expected to fall under \u201CEmpowering Lives\u201D
+        or \u201CConnecting Lives\u201D but remains covered by NDA."
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[0].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[1].duration
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTexts.Array.data[2].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[0].duration
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[1].duration
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 964353396636857705, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
+      propertyPath: allSubtitleTextsEng.Array.data[2].duration
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1085027186062712399, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: m_Name
@@ -65376,7 +65744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573395390362396680, guid: 284b6a20c2368d64c8dd495168ab92e3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -65539,6 +65907,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+--- !u!328 &5310257699281370932 stripped
+VideoPlayer:
+  m_CorrespondingSourceObject: {fileID: 1650623796834024479, guid: 0024a7f970b539c49bbc873843d35a3f, type: 3}
+  m_PrefabInstance: {fileID: 5310257699281370931}
+  m_PrefabAsset: {fileID: 0}
 --- !u!225 &5342650169842224647
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -66097,6 +66470,11 @@ MonoBehaviour:
   playPauseImage: {fileID: 7372112211684775207}
   pauseIcon: {fileID: 21300000, guid: c36cf5adab6e98d4384faba0f4d40692, type: 3}
   playIcon: {fileID: 21300000, guid: 68780f78ef746204695fd7a30f81c22c, type: 3}
+  allVideoPlayers:
+  - {fileID: 5310257699281370932}
+  - {fileID: 702039582}
+  - {fileID: 1703432470}
+  - {fileID: 225183194}
 --- !u!224 &8436951640477757700
 RectTransform:
   m_ObjectHideFlags: 0

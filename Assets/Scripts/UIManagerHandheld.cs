@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class UIManagerHandheld : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class UIManagerHandheld : MonoBehaviour
     public Image playPauseImage;
     public Sprite pauseIcon;
     public Sprite playIcon;
+
+    public VideoPlayer[] allVideoPlayers;
 
     private void Awake()
     {
@@ -62,6 +65,10 @@ public class UIManagerHandheld : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0f;
+        for (int i = 0; i < allVideoPlayers.Length; i++)
+        {
+            allVideoPlayers[i].Pause();
+        }
     }
 
     public void Resume()

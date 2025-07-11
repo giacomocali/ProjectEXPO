@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        print("Running on: " + SystemInfo.deviceType);
         charController = GetComponent<CharacterController>();
     }
 

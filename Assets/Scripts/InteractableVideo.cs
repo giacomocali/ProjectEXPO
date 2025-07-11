@@ -45,9 +45,6 @@ public class InteractableVideo : MonoBehaviour
     }
 
 
-
-
-
     private void Tick()
     {
         if (player.isPlaying)
@@ -79,6 +76,7 @@ public class InteractableVideo : MonoBehaviour
     {
         tvOn = true;
         mr.material = screenOn;
+
         if (!player.isPlaying && player.isPrepared)
         {
             player.Play();
@@ -94,6 +92,12 @@ public class InteractableVideo : MonoBehaviour
         mr.material = screenOn;
         player.frame = 0;
         player.Play();
+        
+        if(subtitleController.GetComponent<SubtitleController>() != null)
+        {
+            subtitleController.GetComponent<SubtitleController>().index = 0;
+        }
+
     }
 
     public void SelectedEffects()
